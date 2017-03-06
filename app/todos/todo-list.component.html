@@ -1,0 +1,18 @@
+<h2>Todos</h2>
+
+<div class="todo-list" *ngFor="let todo of todos">
+  <div class="todo-item" [class.completed]="todo.completed" >
+    <button class="button checkbox icon" (toggle)="toggle($event)">
+      <i class="material-icons" [innerText]="todo.completed ? 'check_box': 'check_box_outline_blank'"></i>
+    </button>
+    <span class="title">{{todo.title}}</span>
+    <div class="actions">
+      <button class="delete icon">
+        <i class="material-icons" >delete</i>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<p class="error" *ngIf="errorMessage">{{errorMessage}}</p>

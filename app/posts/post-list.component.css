@@ -1,0 +1,27 @@
+
+ul li {
+  background: #fff;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.24), 0 0 4px rgba(0,0,0,0.12);
+  box-sizing: border-box;
+  color: #607D8B;
+  height: 104px;
+  overflow: hidden;
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto 10px;
+}
+ul li span{
+  bottom: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  left: 0;
+  opacity: 1;
+  padding: 32px;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  width: 100%;
+  z-index: 1;
+  text-transform: uppercase;
+}
